@@ -4,8 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dibisto — Digitalisasi UMKM Satu Pintu</title>
+<link rel="canonical" href="https://dibisto.dpdns.org/">
+<meta property="og:url" content="https://dibisto.dpdns.org/">
+<meta property="og:image" content="https://dibisto.dpdns.org/foto/logo-full.webp">
 <meta name="description" content="Dibisto membantu UMKM go digital: legalitas, website katalog, dan toko online dalam satu pintu. Jasa mulai Rp 500rb.">
-<link rel="icon" href="foto/logo.png" type="image/png">
+<link rel="icon" href="foto/logo.webp" type="image/webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 
@@ -94,7 +97,7 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
   font-family: var(--f-display); font-weight: 800; font-size: 18px;
 }
 .brand-img {
-  width: 40px; height: 40px; object-fit: contain;
+  width: 38px; height: 38px; object-fit: contain;
 }
 .brand-name span { color: var(--orange); }
 .nav-links { display: flex; gap: 28px; font-size: 14px; font-weight: 500; color: var(--muted-2); }
@@ -477,6 +480,47 @@ footer {
 /* ─── SCROLL REVEAL ───────────────────────────────────── */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s, transform .6s; }
 .reveal.in { opacity: 1; transform: translateY(0); }
+
+/* ─── HOT DEMO + PAYMENT ─── */
+.btn-hot{background:linear-gradient(135deg,#E85D04,#F59E0B);color:#fff;box-shadow:0 4px 22px rgba(245,158,11,.45);animation:hotpulse 2.2s ease-in-out infinite}
+@keyframes hotpulse{0%,100%{box-shadow:0 4px 22px rgba(245,158,11,.4)}50%{box-shadow:0 4px 34px rgba(245,158,11,.8)}}
+.hot-float{position:fixed;left:20px;bottom:20px;z-index:150;padding:12px 18px;font-size:14px}
+.demo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:36px}
+.demo-card{background:var(--ink-2);border:1px solid var(--border);border-radius:var(--r-lg);padding:22px;display:flex;flex-direction:column;gap:10px;transition:border-color .2s,transform .2s}
+.demo-card:hover{border-color:var(--orange);transform:translateY(-3px)}
+.demo-card h4{font-family:var(--f-display);font-size:16px;font-weight:700}
+.demo-card p{font-size:13px;color:var(--muted-2);flex:1}
+.demo-card .url{font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+.pay-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:36px}
+.pay-card{background:var(--ink-2);border:1px solid var(--border);border-radius:var(--r-lg);padding:22px;display:flex;flex-direction:column;gap:12px}
+.pay-card h4{font-family:var(--f-display);font-size:16px;font-weight:700}
+.pay-holder{font-size:12px;color:var(--muted)}
+.pay-row{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--ink);border:1px solid var(--border);border-radius:var(--r);padding:11px 14px}
+.pay-num{font-family:var(--f-mono);font-size:14px}
+.copy-btn{background:none;border:1px solid var(--border);border-radius:8px;padding:6px 11px;font-size:12px;font-weight:600;color:var(--muted-2);transition:all .15s}
+.copy-btn:hover{border-color:var(--orange);color:var(--orange-2)}
+.copy-btn.ok{background:var(--green);border-color:var(--green);color:#111}
+.qris-card{align-items:center;text-align:center}
+.qris-card img{max-width:230px;width:100%;border-radius:12px;background:#fff}
+.pay-total{text-align:center;background:rgba(232,93,4,.08);border:1px solid rgba(232,93,4,.3);border-radius:var(--r);padding:14px;margin-bottom:14px}
+.pay-total strong{display:block;font-family:var(--f-display);font-size:26px;color:var(--orange-2)}
+
+/* ─── LIST CATALOG ─── */
+.svc-grid{display:flex;flex-direction:column;gap:0;border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;background:var(--ink)}
+.svc-row{display:grid;grid-template-columns:110px 1fr auto auto;gap:18px;align-items:center;padding:16px 20px;border-bottom:1px solid var(--border);transition:background .15s}
+.svc-row:last-child{border-bottom:none}
+.svc-row:hover{background:rgba(255,255,255,.03)}
+.svc-cat{font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--orange-2)}
+.svc-row .svc-name{font-size:15px}
+.svc-row .svc-price{margin-top:0;font-size:14px;white-space:nowrap}
+.svc-row .svc-add{width:auto;padding:9px 16px;white-space:nowrap}
+@media(max-width:640px){.svc-row{grid-template-columns:1fr auto;gap:8px 12px}.svc-cat{grid-column:1/-1}.svc-row .svc-add{grid-column:1/-1;width:100%}}
+.porto-list{display:flex;flex-direction:column;border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;background:var(--ink)}
+.porto-row{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:16px 20px;border-bottom:1px solid var(--border)}
+.porto-row:last-child{border-bottom:none}
+.porto-row h4{font-family:var(--f-display);font-size:15px;font-weight:700}
+.porto-row p{font-size:12px;color:var(--muted-2)}
+.hero-logo{height:84px;width:auto;margin-bottom:22px}
 </style>
 </head>
 <body>
@@ -538,6 +582,20 @@ footer {
   </div>
 </div>
 
+<div class="modal" id="payModal">
+  <div class="modal-card">
+    <button class="modal-x" id="payClose">✕</button>
+    <h3>Pesanan Diterima 🎉</h3>
+    <p class="sub">Bayar ke salah satu metode berikut, lalu konfirmasi via WhatsApp.</p>
+    <div class="pay-total">Total bayar<strong id="payTotal">Rp 0</strong></div>
+    <div id="payInfo" style="display:grid;gap:10px;margin-bottom:14px"></div>
+    <div style="text-align:center;margin-bottom:14px"><img src="foto/qris.jpg" alt="QRIS" style="max-width:200px;margin:0 auto;border-radius:10px;background:#fff" onerror="this.style.display='none'"></div>
+    <a class="btn btn-primary btn-block" id="payWa" target="_blank" rel="noopener">Konfirmasi via WhatsApp</a>
+  </div>
+</div>
+
+<a href="#contoh" class="btn btn-hot hot-float">🔥 Contoh Website</a>
+
 <div class="toast" id="toast"></div>
 
 <!-- ═══════════ HEADER ═══════════ -->
@@ -545,14 +603,16 @@ footer {
   <div class="wrap">
     <nav>
       <a href="#top" class="brand">
-        <img class="brand-img" src="foto/logo.png" alt="Logo Dibisto"
-             onerror="this.src='data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'40\' height=\'40\'><rect width=\'40\' height=\'40\' rx=\'8\' fill=\'%23E85D04\'/><text x=\'20\' y=\'27\' text-anchor=\'middle\' font-family=\'sans-serif\' font-size=\'18\' font-weight=\'bold\' fill=\'white\'>D</text></svg>'">
-        <div class="brand-name">Dibi<span>sto</span></div>
+        <img class="brand-img" src="foto/logo.webp" alt="Logo Dibisto"
+             onerror="this.src='data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'34\' height=\'34\'><rect width=\'34\' height=\'34\' rx=\'8\' fill=\'%23E85D04\'/><text x=\'17\' y=\'23\' text-anchor=\'middle\' font-family=\'sans-serif\' font-size=\'16\' font-weight=\'bold\' fill=\'white\'>E</text></svg>'">
+        <div class="brand-name">Di<span>bisto</span></div>
       </a>
       <div class="nav-links">
         <a href="#layanan">Layanan</a>
         <a href="#paket">Paket</a>
         <a href="#portofolio">Portofolio</a>
+        <a href="#contoh">Contoh Web</a>
+        <a href="#bayar">Cara Bayar</a>
         <a href="#order">Order</a>
       </div>
       <div class="nav-right">
@@ -573,6 +633,7 @@ footer {
   <div class="wrap">
     <div class="hero-inner">
       <div>
+        <img class="hero-logo" src="foto/logo-full.webp" alt="Logo Dibisto">
         <div class="hero-tag">
           <span class="tag-dot"></span>
           Jasa Digitalisasi UMKM · Tasikmalaya
@@ -588,6 +649,7 @@ footer {
         <div class="hero-cta">
           <a href="#layanan" class="btn btn-primary">Lihat Layanan</a>
           <a href="#paket" class="btn btn-ghost">Bandingkan Paket</a>
+          <a href="#contoh" class="btn btn-hot">🔥 Lihat Contoh Website</a>
         </div>
         <div class="hero-proof">
           <div class="proof-item">
@@ -690,7 +752,36 @@ footer {
       <h2 class="section-title">Website yang sudah kami bangun</h2>
       <p class="section-sub">Setiap klien punya kebutuhan berbeda — kami bangun sesuai usahanya, bukan template seragam.</p>
     </div>
-    <div class="porto-grid reveal" style="margin-top:36px;" id="portoGrid"></div>
+    <div class="porto-list reveal" style="margin-top:36px;" id="portoGrid"></div>
+  </div>
+</section>
+
+<!-- ═══════════ CONTOH WEB ═══════════ -->
+<section id="contoh">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-label">Contoh Website</div>
+      <h2 class="section-title">Lihat langsung hasil kerja kami</h2>
+      <p class="section-sub">Klik dan coba sendiri — ini contoh website nyata yang bisa kamu miliki.</p>
+    </div>
+    <div class="demo-grid reveal">
+      <div class="demo-card"><h4>MBC Labs</h4><p>Website profil &amp; layanan perusahaan.</p><span class="url">mbc-labs.com</span><a class="btn btn-hot btn-sm" href="https://mbc-labs.com/" target="_blank" rel="noopener">🔥 Buka Contoh</a></div>
+      <div class="demo-card"><h4>Kaizen Skin</h4><p>Website produk perawatan kulit dengan tampilan bersih.</p><span class="url">kaizen.skin</span><a class="btn btn-hot btn-sm" href="https://kaizen.skin/" target="_blank" rel="noopener">🔥 Buka Contoh</a></div>
+      <div class="demo-card"><h4>Kopi Siloka</h4><p>Katalog &amp; pemesanan untuk usaha kopi.</p><span class="url">kopisiloka.netlify.app</span><a class="btn btn-hot btn-sm" href="https://kopisiloka.netlify.app/" target="_blank" rel="noopener">🔥 Buka Contoh</a></div>
+      <div class="demo-card"><h4>Usaha Rumah</h4><p>Website sederhana untuk UMKM rumahan.</p><span class="url">usaharumah.netlify.app</span><a class="btn btn-hot btn-sm" href="https://usaharumah.netlify.app/" target="_blank" rel="noopener">🔥 Buka Contoh</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CARA BAYAR ═══════════ -->
+<section id="bayar" class="porto-bg">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-label">Pembayaran</div>
+      <h2 class="section-title">Transfer bank, Gopay, atau QRIS</h2>
+      <p class="section-sub">Semua atas nama Benyamin Hartanto. Setelah bayar, kirim bukti via WhatsApp.</p>
+    </div>
+    <div class="pay-grid reveal" id="payGrid"></div>
   </div>
 </section>
 
@@ -764,7 +855,7 @@ footer {
   <div class="wrap">
     <div class="footer-inner">
       <div>
-        <div class="footer-brand-name">Dibi<span>sto</span></div>
+        <img src="foto/logo-full.webp" alt="Logo Dibisto" style="height:64px;width:auto;margin-bottom:10px"><div class="footer-brand-name" style="display:none">Di<span>bisto</span></div>
         <p class="footer-desc">Digitalisasi UMKM satu pintu — legalitas, website, dan marketplace aktif untuk usahamu.</p>
       </div>
       <div class="footer-col">
@@ -871,12 +962,13 @@ const PACKAGES = [
 /* ── DATA PORTOFOLIO ────────────────────────────────── */
 // Tambahkan sendiri: file foto di /foto/, name, desc, url klien
 const PORTFOLIO = [
-  { img:"porto-1.webp", name:"Nama Klien 1", desc:"Kategori usaha · Kota", url:"#" },
-  { img:"porto-2.webp", name:"Nama Klien 2", desc:"Kategori usaha · Kota", url:"#" },
-  { img:"porto-3.webp", name:"Nama Klien 3", desc:"Kategori usaha · Kota", url:"#" },
-  { img:"porto-4.webp", name:"Nama Klien 4", desc:"Kategori usaha · Kota", url:"#" },
-  { img:"porto-5.webp", name:"Nama Klien 5", desc:"Kategori usaha · Kota", url:"#" },
-  { img:"porto-6.webp", name:"Nama Klien 6", desc:"Kategori usaha · Kota", url:"#" },
+  { img:"", name:"MBC Labs",       desc:"Kosmetik · mbc-labs.com",            url:"https://mbc-labs.com/" },
+  { img:"", name:"Kaizen Skin",    desc:"Kosmetik · kaizen.skin",             url:"https://kaizen.skin/" },
+  { img:"", name:"Usaha Rumah",    desc:"UMKM · usaharumah.netlify.app",      url:"https://usaharumah.netlify.app/" },
+  { img:"", name:"Kopi Siloka",    desc:"Kafe & Kopi · kopisiloka.netlify.app",   url:"https://kopisiloka.netlify.app/" },
+  { img:"", name:"48 Street Cafe", desc:"Kafe & Kopi · 48streetcafe.netlify.app", url:"https://48streetcafe.netlify.app/" },
+  { img:"", name:"Cap Payung",     desc:"UMKM · cappayung.netlify.app",       url:"https://cappayung.netlify.app/" },
+  { img:"", name:"Gafiku",         desc:"UMKM · gafiku.netlify.app",          url:"https://gafiku.netlify.app/" },
 ];
 
 /* ── UTILS ──────────────────────────────────────────── */
@@ -914,7 +1006,6 @@ function renderCart() {
   $("cartBody").innerHTML = cart.length
     ? cart.map(c => `
         <div class="cart-item">
-          <div class="ci-img"><img src="foto/${c.img||''}" onerror="this.remove()" loading="lazy"></div>
           <div class="ci-info">
             <h5>${c.name}</h5>
             <span>${c.qty} × ${rp(c.price)}</span>
@@ -1004,9 +1095,10 @@ $("orderForm").addEventListener("submit", async e => {
       await fetch(CFG.SCRIPT, { method:"POST", mode:"no-cors", headers:{"Content-Type":"application/json"}, body: JSON.stringify(payload) });
     }
     const waMsg = `Halo Dibisto, saya *${payload.name}* (${payload.phone}) ingin order:\n${payload.items}\n\nTotal: *${rp(payload.total)}*${payload.note ? "\n\nCatatan: "+payload.note : ""}`;
+    const tot = payload.total;
     cart = []; voucher = null; saveCart(); closeModal();
-    toast("Pesanan terkirim! Mengarahkan ke WhatsApp…");
-    setTimeout(() => { window.open(`https://wa.me/${CFG.WA}?text=${encodeURIComponent(waMsg)}`, "_blank"); }, 800);
+    toast("Pesanan terkirim! Silakan selesaikan pembayaran.");
+    setTimeout(() => openPay(tot, `https://wa.me/${CFG.WA}?text=${encodeURIComponent(waMsg)}`), 500);
   } catch {
     toast("Gagal mengirim. Coba hubungi kami via WA.", true);
   } finally {
@@ -1033,18 +1125,11 @@ function renderServices() {
   });
   $("svcGrid").innerHTML = list.length
     ? list.map(s => `
-        <div class="svc-card">
-          <div class="svc-thumb">
-            <span class="svc-tag-cat">${s.cat}</span>
-            <img src="foto/${s.img}" alt="${s.name}" loading="lazy"
-                 onerror="this.style.display='none';this.parentElement.querySelector('.ph').style.opacity='0.3'">
-            <span class="ph">📦</span>
-          </div>
-          <div class="svc-body">
-            <div class="svc-name">${s.name}</div>
-            <div class="svc-price">${rp(s.price)}</div>
-            <button class="svc-add" data-id="${s.id}">+ Keranjang</button>
-          </div>
+        <div class="svc-row">
+          <span class="svc-cat">${s.cat}</span>
+          <div class="svc-name">${s.name}</div>
+          <div class="svc-price">${rp(s.price)}</div>
+          <button class="svc-add" data-id="${s.id}">+ Keranjang</button>
         </div>`)
       .join("")
     : `<p class="empty-msg">Tidak ada layanan yang cocok.</p>`;
@@ -1092,15 +1177,9 @@ $("pkgGrid").querySelectorAll(".pkg-buy").forEach(b => {
 
 /* ── RENDER PORTFOLIO ───────────────────────────────── */
 $("portoGrid").innerHTML = PORTFOLIO.map(p => `
-  <div class="porto-card">
-    <img src="foto/${p.img}" alt="${p.name}" loading="lazy"
-         onerror="this.style.display='none'">
-    <div class="porto-ph">🌐</div>
-    <div class="porto-overlay">
-      <h4>${p.name}</h4>
-      <p>${p.desc}</p>
-      ${p.url !== "#" ? `<a href="${p.url}" target="_blank" rel="noopener">Lihat website →</a>` : ""}
-    </div>
+  <div class="porto-row">
+    <div><h4>${p.name}</h4><p>${p.desc}</p></div>
+    ${p.url !== "#" ? `<a class="btn btn-outline-orange btn-sm" href="${p.url}" target="_blank" rel="noopener noreferrer" aria-label="Kunjungi website ${p.name}">Kunjungi website</a>` : ""}
   </div>`).join("");
 
 /* ── WA LINKS ───────────────────────────────────────── */
@@ -1134,6 +1213,21 @@ const rev = new IntersectionObserver((entries) => {
   });
 }, { threshold: .1 });
 document.querySelectorAll(".reveal").forEach(el => rev.observe(el));
+
+/* ── PAYMENT ── */
+const PAY = { holder:"Benyamin Hartanto",
+  list:[{n:"Bank BCA",v:"0541216510"},{n:"Bank BRI",v:"4462 0104 5937 531"},{n:"Gopay",v:"08951766332"}] };
+function copyNum(v,b){ navigator.clipboard.writeText(v.replace(/\s/g,"")).then(()=>{const o=b.textContent;b.textContent="Tersalin!";b.classList.add("ok");setTimeout(()=>{b.textContent=o;b.classList.remove("ok")},1400)}); }
+function payRows(){ return PAY.list.map(x=>`<div class="pay-row"><span class="pay-num">${x.n}: ${x.v}</span><button class="copy-btn" data-v="${x.v}">Salin</button></div>`).join(""); }
+function bindCopy(root){ root.querySelectorAll(".copy-btn").forEach(b=>b.addEventListener("click",()=>copyNum(b.dataset.v,b))); }
+$("payGrid").innerHTML = PAY.list.map(x=>`<div class="pay-card"><h4>${x.n}</h4><span class="pay-holder">a.n. ${PAY.holder}</span><div class="pay-row"><span class="pay-num">${x.v}</span><button class="copy-btn" data-v="${x.v}">Salin</button></div></div>`).join("")
+ + `<div class="pay-card qris-card"><h4>QRIS</h4><span class="pay-holder">a.n. ${PAY.holder}</span><img src="foto/qris.jpg" alt="QRIS Dibisto" onerror="this.style.display='none'"><span class="pay-holder">Scan dengan bank / e-wallet berlogo QRIS</span></div>`;
+bindCopy($("payGrid"));
+const payModal=$("payModal");
+function openPay(total,link){ $("payInfo").innerHTML=payRows(); bindCopy($("payInfo")); $("payTotal").textContent=rp(total); $("payWa").href=link; payModal.classList.add("on"); ov.classList.add("on"); }
+function closePay(){ payModal.classList.remove("on"); ov.classList.remove("on"); }
+$("payClose").addEventListener("click",closePay);
+ov.addEventListener("click",closePay);
 </script>
 </body>
 </html>
