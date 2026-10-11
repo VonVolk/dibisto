@@ -7,7 +7,7 @@
 <link rel="canonical" href="https://dibisto.dpdns.org/">
 <meta property="og:url" content="https://dibisto.dpdns.org/">
 <meta property="og:image" content="https://dibisto.dpdns.org/foto/logo-full.webp">
-<meta name="description" content="Dibisto membantu UMKM go digital: legalitas, website katalog, dan toko online dalam satu pintu. Jasa mulai Rp 500rb.">
+<meta name="description" content="Dibisto membantu UMKM go digital: legalitas, website katalog, dan toko online dalam satu pintu. Jasa mulai Rp 120rb.">
 <link rel="icon" href="foto/logo.webp" type="image/webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -895,66 +895,71 @@ const CFG = {
 // foto: ganti nama file sesuai yang kamu upload ke folder /foto/
 const SERVICES = [
   // LEGALITAS
-  { id:"l1", cat:"legalitas", name:"Pendaftaran NIB Perorangan (OSS)", price:150000, img:"svc-nib.webp" },
-  { id:"l2", cat:"legalitas", name:"Pendaftaran NIB Badan Usaha (CV/PT)", price:400000, img:"svc-nib-badan.webp" },
-  { id:"l3", cat:"legalitas", name:"Izin Edar PIRT", price:350000, img:"svc-pirt.webp" },
-  { id:"l4", cat:"legalitas", name:"Sertifikasi Halal Self-Declare", price:280000, img:"svc-halal.webp" },
-  { id:"l5", cat:"legalitas", name:"Pendaftaran Merek Dagang (HAKI)", price:650000, img:"svc-haki.webp" },
+  { id:"l1", cat:"legalitas", name:"Pendaftaran NIB Perorangan (OSS)", price:150000, img:"produk1.webp" },
+  { id:"l2", cat:"legalitas", name:"Pendaftaran NIB Badan Usaha (CV/PT)", price:400000, img:"produk2.webp" },
+  { id:"l3", cat:"legalitas", name:"Izin Edar PIRT", price:350000, img:"produk3.webp" },
+  { id:"l4", cat:"legalitas", name:"Sertifikasi Halal Self-Declare", price:280000, img:"produk4.webp" },
+  { id:"l5", cat:"legalitas", name:"Pendaftaran Merek Dagang / HAKI", price:650000, img:"produk5.webp" },
   // WEBSITE
-  { id:"w1", cat:"website", name:"Landing Page 1 Halaman", price:480000, img:"svc-landing.webp" },
-  { id:"w2", cat:"website", name:"Website Katalog Multi-Kategori", price:800000, img:"svc-katalog.webp" },
-  { id:"w3", cat:"website", name:"Integrasi Keranjang & Checkout", price:300000, img:"svc-checkout.webp" },
-  { id:"w4", cat:"website", name:"Widget WhatsApp & Auto-Reply", price:150000, img:"svc-wa-widget.webp" },
-  { id:"w5", cat:"website", name:"Optimasi SEO Teknis Website", price:350000, img:"svc-seo.webp" },
-  { id:"w6", cat:"website", name:"Maintenance Website (per bulan)", price:150000, img:"svc-maintenance.webp" },
+  { id:"w1", cat:"website", name:"Landing Page 1 Halaman", price:480000, img:"produk6.webp" },
+  { id:"w2", cat:"website", name:"Website Katalog Multi-Kategori", price:1400000, img:"produk7.webp" },
+  { id:"w3", cat:"website", name:"Integrasi Keranjang & Checkout", price:500000, img:"produk8.webp" },
+  { id:"w4", cat:"website", name:"Domain + Hosting Setahun (.com/.id)", price:180000, img:"produk9.webp" },
+  { id:"w5", cat:"website", name:"Live Status Tracker Pesanan", price:350000, img:"produk10.webp" },
+  { id:"w6", cat:"website", name:"Dashboard Sheet/Excel Otomatis", price:250000, img:"produk11.webp" },
+  { id:"w7", cat:"website", name:"Migrasi Data & Produk Lama", price:200000, img:"produk12.webp" },
+  { id:"w8", cat:"website", name:"Maintenance Website Bulanan", price:150000, img:"produk13.webp" },
+  { id:"w9", cat:"website", name:"Optimasi SEO Teknis Website", price:400000, img:"produk14.webp" },
+  { id:"w10", cat:"website", name:"Integrasi Widget WhatsApp & Auto-Reply", price:300000, img:"produk15.webp" },
   // MARKETPLACE
-  { id:"m1", cat:"marketplace", name:"Setup & Optimasi Toko Shopee", price:350000, img:"svc-shopee.webp" },
-  { id:"m2", cat:"marketplace", name:"Upload & Optimasi 50 Produk Shopee", price:180000, img:"svc-shopee-upload.webp" },
-  { id:"m3", cat:"marketplace", name:"Setup & Optimasi Toko TikTok Shop", price:380000, img:"svc-tiktok.webp" },
-  { id:"m4", cat:"marketplace", name:"Upload 50 Produk ke TikTok Shop", price:170000, img:"svc-tiktok-upload.webp" },
-  { id:"m5", cat:"marketplace", name:"Setup WhatsApp Business + Katalog", price:150000, img:"svc-wabiz.webp" },
-  { id:"m6", cat:"marketplace", name:"Konsultasi Strategi Jualan Online", price:100000, img:"svc-konsul.webp" },
+  { id:"m1", cat:"marketplace", name:"Setup & Optimasi Toko Shopee", price:350000, img:"produk16.webp" },
+  { id:"m2", cat:"marketplace", name:"Upload & Optimasi 50 Produk Shopee", price:180000, img:"produk17.webp" },
+  { id:"m3", cat:"marketplace", name:"Setup & Optimasi Toko TikTok Shop", price:380000, img:"produk18.webp" },
+  { id:"m4", cat:"marketplace", name:"Upload & Migrasi 50 Produk ke TikTok Shop", price:170000, img:"produk19.webp" },
+  { id:"m5", cat:"marketplace", name:"Setup WhatsApp Business + Katalog Produk", price:150000, img:"produk20.webp" },
+  { id:"m6", cat:"marketplace", name:"Auto-Reply & Template Pesan WA Business", price:150000, img:"produk21.webp" },
+  { id:"m7", cat:"marketplace", name:"Jasa Live Shopping Shopee/TikTok (1 Sesi)", price:120000, img:"produk22.webp" },
+  { id:"m8", cat:"marketplace", name:"Kelola Chat & Admin Toko (Paket Mingguan)", price:300000, img:"produk23.webp" },
+  { id:"m9", cat:"marketplace", name:"Setup Iklan Shopee/TikTok Ads Starter", price:400000, img:"produk24.webp" },
+  { id:"m10", cat:"marketplace", name:"Konsultasi Strategi Jualan Shopee/WA/TikTok", price:350000, img:"produk25.webp" },
 ];
 
 /* ── DATA PAKET ─────────────────────────────────────── */
 const PACKAGES = [
   {
-    id:"pkg-starter", tier:"Starter", name:"Paket Mulai Digital",
-    tagline:"Untuk yang baru mau go online",
-    price: 750000, featured: false,
+    id:"pkg-bronze", tier:"Bronze", name:"Full Pack Bronze",
+    tagline:"Solusi Satu Pintu · Skala Pemula",
+    price: 999000, featured: false,
     features:[
-      "Pendaftaran NIB Perorangan",
-      "Landing page 1 halaman (profil + kontak)",
-      "Setup WhatsApp Business + katalog",
+      "Pendaftaran NIB Perorangan (OSS)",
+      "Landing page 1 halaman + domain & hosting",
+      "Setup & optimasi toko Shopee",
+      "Upload 50 produk pertama",
       "Estimasi 5–7 hari kerja"
     ]
   },
   {
-    id:"pkg-grow", tier:"Grow", name:"Paket Toko Online",
-    tagline:"Website + marketplace aktif",
-    price: 1800000, featured: true,
+    id:"pkg-silver", tier:"Silver", name:"Full Pack Silver",
+    tagline:"Solusi Satu Pintu · Skala Berkembang",
+    price: 2500000, featured: true,
     features:[
-      "Legalitas dasar (NIB + PIRT atau Halal)",
-      "Website katalog multi-kategori",
-      "Setup toko Shopee atau TikTok Shop",
-      "Upload 50 produk pertama",
-      "Widget WhatsApp di website",
+      "Legalitas dasar (NIB, PIRT, Halal Self-Declare)",
+      "Website katalog multi-kategori + cart & checkout",
+      "Live status tracker pesanan",
+      "Setup toko Shopee + WhatsApp Business",
       "Estimasi 10–14 hari kerja"
     ]
   },
   {
-    id:"pkg-full", tier:"Full", name:"Paket Ekosistem Digital",
-    tagline:"Semua dalam satu paket",
-    price: 3500000, featured: false,
+    id:"pkg-gold", tier:"Gold", name:"Full Pack Gold",
+    tagline:"Solusi Satu Pintu · All-in",
+    price: 5500000, featured: false,
     features:[
-      "Legalitas lengkap (NIB + PIRT + Halal)",
-      "Website katalog + keranjang & checkout",
-      "Setup Shopee + TikTok Shop + WA Business",
-      "Upload 50 produk di setiap platform",
-      "Optimasi SEO dasar website",
-      "Maintenance 1 bulan pertama",
-      "Konsultasi strategi jualan 1:1",
-      "Estimasi 14–21 hari kerja"
+      "Legalitas lengkap (5 dokumen, termasuk Merek/HAKI)",
+      "Website full fitur + maintenance bulanan",
+      "Setup & optimasi Shopee, TikTok Shop, WhatsApp Business",
+      "Iklan Shopee/TikTok Ads starter + strategi 1:1",
+      "Pendampingan penuh 30 hari"
     ]
   }
 ];
