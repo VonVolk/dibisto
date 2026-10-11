@@ -521,6 +521,19 @@ footer {
 .porto-row h4{font-family:var(--f-display);font-size:15px;font-weight:700}
 .porto-row p{font-size:12px;color:var(--muted-2)}
 .hero-logo{height:84px;width:auto;margin-bottom:22px}
+
+/* ─── BRIEF FORM ─── */
+.brief-card{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;padding:36px;border-radius:var(--r-lg);border:1px solid rgba(232,93,4,.3);background:linear-gradient(160deg,rgba(232,93,4,.08) 0%,var(--ink-2) 55%)}
+@media(max-width:800px){.brief-card{grid-template-columns:1fr;padding:26px 22px}}
+.brief-card h3{font-family:var(--f-display);font-size:22px;font-weight:800;margin-bottom:10px;line-height:1.25}
+.brief-card p{font-size:14px;color:var(--muted-2);line-height:1.7;margin-bottom:16px}
+.brief-list{list-style:none;display:grid;gap:8px;margin-bottom:24px}
+.brief-list li{font-size:13.5px;color:var(--muted-2);display:flex;gap:10px}
+.brief-list li::before{content:'✓';color:var(--green);font-weight:700;flex-shrink:0}
+.brief-qr{text-align:center}
+.qr-box{width:min(220px,100%);margin:0 auto 12px;padding:12px;background:#fff;border-radius:16px}
+.qr-box svg{width:100%;height:auto;display:block}
+.brief-qr span{font-size:12px;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -613,6 +626,7 @@ footer {
         <a href="#portofolio">Portofolio</a>
         <a href="#contoh">Contoh Web</a>
         <a href="#bayar">Cara Bayar</a>
+        <a href="#brief">Isi Brief</a>
         <a href="#order">Order</a>
       </div>
       <div class="nav-right">
@@ -785,6 +799,35 @@ footer {
   </div>
 </section>
 
+<!-- ═══════════ BRIEF ═══════════ -->
+<section id="brief">
+  <div class="wrap">
+    <div class="reveal" style="margin-bottom:32px;">
+      <div class="section-label">Brief Proyek</div>
+      <h2 class="section-title">Ceritakan kebutuhanmu lewat form singkat</h2>
+      <p class="section-sub">Mau dibuatkan website atau aplikasi? Isi form ini dulu supaya kami paham usahamu sebelum mulai mengerjakan.</p>
+    </div>
+    <div class="brief-card reveal">
+      <div>
+        <h3>Brief Website &amp; Aplikasi Dibisto</h3>
+        <p>Tidak perlu paham istilah teknis. Cukup ceritakan usahamu, tampilan yang kamu suka, dan apa yang ingin kamu capai. Sisanya kami yang urus.</p>
+        <ul class="brief-list">
+          <li>Isinya pertanyaan sederhana, sekitar 10–15 menit</li>
+          <li>Boleh dikosongkan kalau belum tahu, nanti kami bantu tentukan</li>
+          <li>Setelah dikirim, kami hubungi kamu lewat WhatsApp</li>
+        </ul>
+        <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdCP3KEsDe44bCrU7jJnXm67fFxDioP8Vo-BogmU12X1lxYEA/viewform" target="_blank" rel="noopener">Isi Brief Sekarang →</a>
+      </div>
+      <div class="brief-qr">
+        <div class="qr-box" role="img" aria-label="QR code form Brief Website dan Aplikasi Dibisto">
+          <svg xmlns="http://www.w3.org/2000/svg" width="450" height="450" class="segno"><g transform="scale(10)"><path fill="#fff" d="M0 0h45v45h-45z"/><path class="qrline" stroke="#0b1120" d="M2 2.5h7m1 0h1m1 0h1m3 0h2m2 0h3m1 0h3m1 0h1m1 0h1m1 0h3m1 0h7m-41 1h1m5 0h1m1 0h1m2 0h1m2 0h1m1 0h2m2 0h1m1 0h2m5 0h2m1 0h1m1 0h1m5 0h1m-41 1h1m1 0h3m1 0h1m3 0h1m1 0h1m2 0h1m2 0h1m6 0h3m2 0h2m2 0h1m1 0h3m1 0h1m-41 1h1m1 0h3m1 0h1m1 0h1m3 0h1m2 0h2m1 0h1m2 0h1m3 0h3m3 0h1m2 0h1m1 0h3m1 0h1m-41 1h1m1 0h3m1 0h1m2 0h1m1 0h1m1 0h2m1 0h1m1 0h2m8 0h2m4 0h1m1 0h3m1 0h1m-41 1h1m5 0h1m5 0h3m1 0h4m6 0h1m3 0h3m1 0h1m5 0h1m-41 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-33 1h1m2 0h1m1 0h1m2 0h3m3 0h2m5 0h1m2 0h1m-33 1h1m1 0h2m1 0h3m1 0h3m1 0h2m1 0h4m1 0h2m3 0h1m1 0h4m2 0h1m2 0h1m1 0h2m-41 1h3m1 0h2m2 0h1m1 0h2m1 0h3m2 0h2m1 0h1m1 0h1m1 0h1m2 0h1m1 0h7m1 0h1m1 0h1m-40 1h4m1 0h2m1 0h2m2 0h1m1 0h1m1 0h2m2 0h1m1 0h1m6 0h1m5 0h1m1 0h1m-39 1h3m4 0h1m1 0h3m2 0h1m1 0h1m1 0h3m3 0h2m1 0h1m4 0h4m3 0h2m-41 1h1m1 0h2m1 0h2m2 0h2m1 0h2m1 0h5m1 0h4m1 0h1m4 0h1m5 0h2m-38 1h2m1 0h1m3 0h1m1 0h1m2 0h1m1 0h2m1 0h1m2 0h1m2 0h2m1 0h2m5 0h2m1 0h1m-35 1h1m1 0h5m1 0h1m2 0h2m1 0h2m3 0h1m2 0h1m4 0h3m1 0h1m4 0h2m-39 1h2m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m2 0h3m1 0h2m2 0h1m6 0h4m1 0h2m-38 1h1m1 0h6m2 0h1m1 0h1m2 0h3m1 0h3m2 0h1m3 0h1m4 0h2m-38 1h1m1 0h1m6 0h3m5 0h1m1 0h2m3 0h2m4 0h4m1 0h1m1 0h1m-38 1h2m1 0h6m6 0h3m2 0h2m3 0h3m2 0h1m3 0h1m1 0h3m-39 1h2m1 0h3m3 0h1m2 0h1m1 0h1m9 0h1m2 0h5m1 0h3m1 0h2m1 0h1m-41 1h1m1 0h1m3 0h2m3 0h1m2 0h1m3 0h1m3 0h3m1 0h1m2 0h1m2 0h5m1 0h1m1 0h1m-41 1h1m1 0h2m1 0h1m4 0h3m2 0h2m1 0h1m1 0h1m4 0h1m1 0h5m1 0h2m1 0h1m2 0h2m-41 1h1m1 0h1m1 0h3m4 0h1m1 0h2m1 0h1m1 0h1m2 0h5m4 0h1m3 0h2m1 0h3m-39 1h1m7 0h1m5 0h1m6 0h2m1 0h2m1 0h1m1 0h1m1 0h1m3 0h2m1 0h1m-40 1h1m3 0h4m2 0h2m3 0h1m1 0h1m4 0h1m1 0h4m1 0h1m1 0h1m3 0h1m1 0h3m-40 1h1m1 0h1m8 0h7m1 0h1m1 0h1m2 0h1m1 0h2m1 0h1m1 0h2m2 0h1m1 0h3m-40 1h1m1 0h1m3 0h2m3 0h1m6 0h5m1 0h1m6 0h3m1 0h1m1 0h1m1 0h2m-40 1h1m3 0h1m1 0h1m2 0h2m2 0h3m1 0h6m2 0h1m4 0h3m1 0h3m-37 1h1m3 0h9m5 0h1m2 0h4m3 0h3m1 0h1m1 0h3m1 0h2m-38 1h1m1 0h1m3 0h1m2 0h5m1 0h2m2 0h4m1 0h1m3 0h3m1 0h1m1 0h1m-38 1h1m1 0h2m2 0h1m3 0h1m1 0h1m1 0h2m1 0h1m2 0h1m1 0h1m3 0h2m1 0h1m3 0h3m1 0h2m-37 1h2m3 0h2m2 0h2m4 0h2m1 0h1m3 0h1m1 0h4m2 0h1m1 0h1m1 0h1m1 0h1m-38 1h2m1 0h4m1 0h5m2 0h4m1 0h1m1 0h1m2 0h1m1 0h2m2 0h9m-33 1h4m1 0h1m2 0h1m1 0h2m3 0h1m4 0h2m2 0h1m3 0h1m3 0h1m-41 1h7m1 0h2m1 0h2m1 0h4m3 0h5m2 0h1m1 0h3m1 0h1m1 0h1m2 0h1m-40 1h1m5 0h1m1 0h1m4 0h2m1 0h1m1 0h1m1 0h3m2 0h1m1 0h1m2 0h1m1 0h1m3 0h1m2 0h1m-40 1h1m1 0h3m1 0h1m2 0h1m1 0h1m4 0h1m1 0h12m2 0h6m2 0h1m-41 1h1m1 0h3m1 0h1m1 0h2m1 0h5m2 0h2m3 0h8m5 0h1m1 0h1m1 0h1m-41 1h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h1m3 0h5m3 0h1m2 0h1m1 0h2m2 0h1m1 0h4m-41 1h1m5 0h1m3 0h1m3 0h5m1 0h3m3 0h2m4 0h1m3 0h2m1 0h1m-40 1h7m1 0h3m1 0h1m1 0h2m1 0h1m2 0h4m1 0h1m1 0h2m1 0h1m1 0h2m3 0h3"/></g></svg>
+        </div>
+        <span>Atau scan QR ini dengan HP kamu</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ═══════════ ORDER ═══════════ -->
 <section id="order">
   <div class="wrap">
@@ -872,6 +915,7 @@ footer {
         <ul>
           <li><a href="#portofolio">Portofolio</a></li>
           <li><a href="#order">Cara Order</a></li>
+          <li><a href="#brief">Isi Brief Proyek</a></li>
           <li><a id="waFooter" href="#" target="_blank">WhatsApp Kami</a></li>
         </ul>
       </div>
